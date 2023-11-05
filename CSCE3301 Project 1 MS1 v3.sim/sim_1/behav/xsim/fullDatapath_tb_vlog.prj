@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALUcu.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/BCD.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/DataMem.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/Four_Digit_Seven_Segment_Driver_Optimized.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/InstMem.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/NbitMUX.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/PC.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/immGen.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/prv32_ALU.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/registerFile.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/shifter.v" \
+"../../../../CSCE3301 Project 1 MS1 v3.srcs/sim_1/new/fullDatapath_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
