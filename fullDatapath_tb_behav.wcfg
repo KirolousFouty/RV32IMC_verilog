@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="372.001 ns"></ZoomEndTime>
-      <Cursor1Time time="372.000 ns"></Cursor1Time>
+      <ZoomEndTime time="77.985 ns"></ZoomEndTime>
+      <Cursor1Time time="205.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="203"></NameColumnWidth>
-      <ValueColumnWidth column_width="141"></ValueColumnWidth>
+      <ValueColumnWidth column_width="135"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="65" />
+   <WVObjectSize size="64" />
    <wvobject fp_name="/fullDatapath_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -35,26 +35,32 @@
    <wvobject fp_name="/fullDatapath_tb/LEDs" type="array">
       <obj_property name="ElementShortName">LEDs[15:0]</obj_property>
       <obj_property name="ObjectShortName">LEDs[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/ledSel" type="array">
       <obj_property name="ElementShortName">ledSel[1:0]</obj_property>
       <obj_property name="ObjectShortName">ledSel[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/LED_out" type="array">
       <obj_property name="ElementShortName">LED_out[6:0]</obj_property>
       <obj_property name="ObjectShortName">LED_out[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/Anode" type="array">
       <obj_property name="ElementShortName">Anode[3:0]</obj_property>
       <obj_property name="ObjectShortName">Anode[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/ssdSel" type="array">
       <obj_property name="ElementShortName">ssdSel[3:0]</obj_property>
       <obj_property name="ObjectShortName">ssdSel[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/clk_period" type="array">
       <obj_property name="ElementShortName">clk_period[31:0]</obj_property>
       <obj_property name="ObjectShortName">clk_period[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/DP1/jump" type="logic">
       <obj_property name="ElementShortName">jump</obj_property>
@@ -114,7 +120,7 @@
    <wvobject fp_name="/fullDatapath_tb/DP1/sumOut" type="array">
       <obj_property name="ElementShortName">sumOut[31:0]</obj_property>
       <obj_property name="ObjectShortName">sumOut[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/DP1/MUX_PC" type="array">
       <obj_property name="ElementShortName">MUX_PC[31:0]</obj_property>
@@ -141,11 +147,6 @@
       <obj_property name="ObjectShortName">immGenOut[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/fullDatapath_tb/DP1/shiftOut" type="array">
-      <obj_property name="ElementShortName">shiftOut[31:0]</obj_property>
-      <obj_property name="ObjectShortName">shiftOut[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/fullDatapath_tb/DP1/MUX_ALU" type="array">
       <obj_property name="ElementShortName">MUX_ALU[31:0]</obj_property>
       <obj_property name="ObjectShortName">MUX_ALU[31:0]</obj_property>
@@ -168,11 +169,12 @@
    <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/writeRegister" type="array">
       <obj_property name="ElementShortName">writeRegister[4:0]</obj_property>
       <obj_property name="ObjectShortName">writeRegister[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/writeData" type="array">
       <obj_property name="ElementShortName">writeData[31:0]</obj_property>
       <obj_property name="ObjectShortName">writeData[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider28">
       <obj_property name="label">tracing</obj_property>
@@ -181,168 +183,8 @@
    <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire" type="array">
       <obj_property name="ElementShortName">NbitRegisterWire[31:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">NbitRegisterWire[31:0][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[31]" type="array">
-         <obj_property name="ElementShortName">[31][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[31][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[30]" type="array">
-         <obj_property name="ElementShortName">[30][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[30][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[29]" type="array">
-         <obj_property name="ElementShortName">[29][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[29][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[28]" type="array">
-         <obj_property name="ElementShortName">[28][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[28][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[27]" type="array">
-         <obj_property name="ElementShortName">[27][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[27][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[26]" type="array">
-         <obj_property name="ElementShortName">[26][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[26][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[25]" type="array">
-         <obj_property name="ElementShortName">[25][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[25][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[24]" type="array">
-         <obj_property name="ElementShortName">[24][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[24][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[23]" type="array">
-         <obj_property name="ElementShortName">[23][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[23][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[22]" type="array">
-         <obj_property name="ElementShortName">[22][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[22][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[21]" type="array">
-         <obj_property name="ElementShortName">[21][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[21][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[20]" type="array">
-         <obj_property name="ElementShortName">[20][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[20][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[19]" type="array">
-         <obj_property name="ElementShortName">[19][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[19][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[18]" type="array">
-         <obj_property name="ElementShortName">[18][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[18][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[17]" type="array">
-         <obj_property name="ElementShortName">[17][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[17][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[16]" type="array">
-         <obj_property name="ElementShortName">[16][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[16][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[15]" type="array">
-         <obj_property name="ElementShortName">[15][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[14]" type="array">
-         <obj_property name="ElementShortName">[14][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[13]" type="array">
-         <obj_property name="ElementShortName">[13][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[12]" type="array">
-         <obj_property name="ElementShortName">[12][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[11]" type="array">
-         <obj_property name="ElementShortName">[11][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[10]" type="array">
-         <obj_property name="ElementShortName">[10][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[9]" type="array">
-         <obj_property name="ElementShortName">[9][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[8]" type="array">
-         <obj_property name="ElementShortName">[8][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[7]" type="array">
-         <obj_property name="ElementShortName">[7][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[6]" type="array">
-         <obj_property name="ElementShortName">[6][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[5]" type="array">
-         <obj_property name="ElementShortName">[5][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[4]" type="array">
-         <obj_property name="ElementShortName">[4][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[3]" type="array">
-         <obj_property name="ElementShortName">[3][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[2]" type="array">
-         <obj_property name="ElementShortName">[2][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[1]" type="array">
-         <obj_property name="ElementShortName">[1][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fullDatapath_tb/DP1/registerFile1/NbitRegisterWire[0]" type="array">
-         <obj_property name="ElementShortName">[0][31:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider62">
       <obj_property name="label">DataMem</obj_property>
@@ -392,7 +234,7 @@
    <wvobject fp_name="/fullDatapath_tb/DP1/ALU1/b" type="array">
       <obj_property name="ElementShortName">b[31:0]</obj_property>
       <obj_property name="ObjectShortName">b[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/DP1/ALU1/shamt" type="array">
       <obj_property name="ElementShortName">shamt[4:0]</obj_property>
@@ -402,7 +244,7 @@
    <wvobject fp_name="/fullDatapath_tb/DP1/ALU1/r" type="array">
       <obj_property name="ElementShortName">r[31:0]</obj_property>
       <obj_property name="ObjectShortName">r[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/fullDatapath_tb/DP1/ALU1/cf" type="logic">
       <obj_property name="ElementShortName">cf</obj_property>
