@@ -1,0 +1,113 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Nov  6 05:16:20 2023
+| Host         : Lenovo running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fullDatapath_control_sets_placed.rpt
+| Design       : fullDatapath
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    35 |
+|    Minimum number of control sets                        |    35 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    35 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    28 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              76 |           39 |
+| No           | No                    | Yes                    |              32 |           22 |
+| No           | Yes                   | No                     |               5 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             736 |          289 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------+-------------------+------------------+----------------+--------------+
+|      Clock Signal     |     Enable Signal    |  Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+----------------------+-------------------+------------------+----------------+--------------+
+|  CU1/jalr_reg/G0      |                      |                   |                1 |              1 |         1.00 |
+|  CU1/jump_reg/G0      |                      |                   |                1 |              1 |         1.00 |
+|  PC1/out_reg[2]_8     |                      | PC1/out_reg[4]_3  |                1 |              1 |         1.00 |
+|  PC1/out_reg[7]_5[0]  |                      |                   |                1 |              2 |         2.00 |
+|  PC1/out_reg[4]_6     |                      | PC1/out_reg[3]_23 |                1 |              2 |         2.00 |
+|  PC1/out_reg[7]_6     |                      | PC1/out_reg[5]_7  |                1 |              2 |         2.00 |
+|  PC1/out_reg[7]_3[0]  |                      |                   |                1 |              4 |         4.00 |
+|  LEDs_reg[15]_i_2_n_1 |                      |                   |                6 |             16 |         2.67 |
+|  ssdClk_IBUF_BUFG     |                      |                   |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG        |                      | rst_IBUF          |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG        | PC1/E[0]             | rst_IBUF          |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_19[0] | rst_IBUF          |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_11[0] | rst_IBUF          |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_3[0]  | rst_IBUF          |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_4[0]  | rst_IBUF          |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_5[0]  | rst_IBUF          |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_6[0]  | rst_IBUF          |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_7[0]  | rst_IBUF          |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_0[0]  | rst_IBUF          |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_13[0] | rst_IBUF          |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_2[0]  | rst_IBUF          |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_18[0] | rst_IBUF          |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_16[0] | rst_IBUF          |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_17[0] | rst_IBUF          |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG        | PC1/out_reg[5]_0[0]  | rst_IBUF          |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_9[0]  | rst_IBUF          |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_8[0]  | rst_IBUF          |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG        | PC1/out_reg[7]_0[0]  | rst_IBUF          |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG        | PC1/out_reg[5]_1[0]  | rst_IBUF          |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG        | CU1/MemWrite         |                   |                8 |             32 |         4.00 |
+|  n_0_873_BUFG         |                      |                   |               24 |             32 |         1.33 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_14[0] | rst_IBUF          |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_1[0]  | rst_IBUF          |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_10[0] | rst_IBUF          |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG        | PC1/out_reg[3]_12[0] | rst_IBUF          |               11 |             32 |         2.91 |
++-----------------------+----------------------+-------------------+------------------+----------------+--------------+
+
+

@@ -15,16 +15,13 @@ module DataMem
  
  
  initial begin
-//     mem[0]=32'd17;
-//     mem[1]=32'd9;
-//     mem[2]=32'd25;
-
-mem[0] = 32'd3; // 0(x0)
-mem[1] = 32'd7; // 4(x0)
-// mem[2] is set by SW in instructions  // 8(x0)
-mem[3] = 32'd3; // loop number of iterations  // 12(x0)
-mem[4] = 32'd1;  // 16(x0)
-
+    mem[0] = 32'd3; // 0(x0)
+    mem[1] = 32'd7; // 4(x0)
+    // mem[2] is set by SW in instructions  // 8(x0)
+    mem[3] = 32'd3; // loop number of iterations  // 12(x0)
+    mem[4] = 32'd1;  // 16(x0)
+    mem[5] = 32'd88; // 20(x0)
+    mem[6] = 32'd10922; // 24(x0)
  end 
 
  

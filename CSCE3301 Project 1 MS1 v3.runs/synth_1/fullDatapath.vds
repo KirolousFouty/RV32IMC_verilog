@@ -1,0 +1,330 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Nov  6 05:13:40 2023
+# Process ID: 1596
+# Current directory: D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.runs/synth_1
+# Command line: vivado.exe -log fullDatapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fullDatapath.tcl
+# Log file: D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.runs/synth_1/fullDatapath.vds
+# Journal file: D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.runs/synth_1\vivado.jou
+# Running On: Lenovo, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 17066 MB
+#-----------------------------------------------------------
+source fullDatapath.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 479.445 ; gain = 180.586
+Command: synth_design -top fullDatapath -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12736
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1329.945 ; gain = 441.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'branch', assumed default net type 'wire' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v:121]
+INFO: [Synth 8-6157] synthesizing module 'fullDatapath' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'InstMem' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/InstMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InstMem' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/InstMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:4]
+INFO: [Synth 8-6157] synthesizing module 'registerFile' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/registerFile.v:3]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'registerFile' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/registerFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rv32_ImmGen' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rv32_ImmGen' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUcu' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALUcu.v:4]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALUcu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ALUcu' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALUcu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'NbitMUX' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/NbitMUX.v:4]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'NbitMUX' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/NbitMUX.v:4]
+INFO: [Synth 8-6157] synthesizing module 'prv32_ALU' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/prv32_ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/shifter.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/shifter.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/shifter.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/prv32_ALU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'prv32_ALU' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/prv32_ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/DataMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/DataMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'branch_cu' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/branch_cu.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'branch_cu' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/branch_cu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Four_Digit_Seven_Segment_Driver_Optimized' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/Four_Digit_Seven_Segment_Driver_Optimized.v:6]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/BCD.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/BCD.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Four_Digit_Seven_Segment_Driver_Optimized' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/Four_Digit_Seven_Segment_Driver_Optimized.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'fullDatapath' (0#1) [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v:4]
+WARNING: [Synth 8-3848] Net shiftOut in module/entity fullDatapath does not have driver. [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v:42]
+WARNING: [Synth 8-7129] Port IR[1] in module rv32_ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR[0] in module rv32_ImmGen is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1445.637 ; gain = 557.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1445.637 ; gain = 557.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1445.637 ; gain = 557.070
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1445.637 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fullDatapath_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fullDatapath_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1551.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1551.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUop_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsrc_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'jalr_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsel_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALUcu.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/shifter.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'LEDs_reg' [D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v:143]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 22    
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	  34 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 22    
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 57    
+	   6 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|DataMem1    | mem_reg    | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|DataMem1    | mem_reg    | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |    36|
+|3     |LUT1     |     3|
+|4     |LUT2     |    70|
+|5     |LUT3     |   122|
+|6     |LUT4     |    58|
+|7     |LUT5     |   357|
+|8     |LUT6     |   636|
+|9     |MUXF7    |   101|
+|10    |MUXF8    |     6|
+|11    |RAM64X1S |    32|
+|12    |FDCE     |   768|
+|13    |FDRE     |    20|
+|14    |LD       |    54|
+|15    |LDC      |     4|
+|16    |LDCP     |     2|
+|17    |LDP      |     1|
+|18    |IBUF     |     9|
+|19    |OBUF     |    27|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1551.090 ; gain = 662.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 1551.090 ; gain = 557.070
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1551.090 ; gain = 662.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1551.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 236 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1551.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 93 instances were transformed.
+  LD => LDCE: 54 instances
+  LDC => LDCE: 4 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 2 instances
+  LDP => LDPE: 1 instance 
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 368df70e
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1551.090 ; gain = 1071.645
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1551.090 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.runs/synth_1/fullDatapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fullDatapath_utilization_synth.rpt -pb fullDatapath_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  6 05:15:24 2023...

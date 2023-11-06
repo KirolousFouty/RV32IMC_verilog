@@ -8,17 +8,21 @@
 
 ### Program Guide (How to use)
 ```
-0- TBA
+0- Download the repo as zip file.
 
-1- TBA
+1- Uncompress in a known folder, and open the .xpr project file using Vivado.
 
-2- TBA
+2- Run simulation, or program it on an FPGA after configuring a constraints file to map the input and output, matching your FPGA.
 ```
+
+### Project Status
+- Instructions supported and passed initial testing: LW, SW, ADD, SUB, AND, OR, BEQ, LUI, AUIPC, JAL, JALR, BNE, BLT, BGE, BLTU, BGEU, ADDI, SLLI, SLTI, SLTIU, XORI, SRLI, SRAI, ORI, ANDI, SLL, SLT, SLTU, XOR, SRL, and SRA.
+- Instructions to be supported: LB, LH, LBU, LHU, SB, SH, ECALL, compressed instructions, and multiplication instructions.
 
 
 ### Challenges Faced
-- TBA
+- Lack of sources explaining what signals and selection lines are produced and used
 
 ### Issues and Problems
-- TBA
+- None faced in the currently supported instructions.
 

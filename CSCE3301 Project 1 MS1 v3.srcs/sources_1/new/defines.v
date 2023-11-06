@@ -43,8 +43,8 @@
 `define     ALU_AND         4'b01_01
 `define     ALU_XOR         4'b01_11
 `define     ALU_SRL         4'b10_00
-`define     ALU_SRA         4'b10_10
 `define     ALU_SLL         4'b10_01
+`define     ALU_SRA         4'b10_10
 `define     ALU_SLT         4'b11_01
 `define     ALU_SLTU        4'b11_11
 

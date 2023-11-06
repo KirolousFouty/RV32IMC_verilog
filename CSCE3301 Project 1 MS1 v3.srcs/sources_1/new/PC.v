@@ -1,7 +1,8 @@
 `timescale 1ns / 1ps
 
 module PC(
-input clk, rst, [31:0]in,
+input clk, rst, 
+input wire [31:0]in,
 output reg [31:0]out
  );
  

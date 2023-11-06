@@ -1,0 +1,41 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALUcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUcu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/BCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/Four_Digit_Seven_Segment_Driver_Optimized.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Four_Digit_Seven_Segment_Driver_Optimized
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/InstMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/NbitMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NbitMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/fullDatapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fullDatapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/NbitShiftLeftOne.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NbitShiftLeftOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/FA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/RCA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RCA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sources_1/new/branch_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.srcs/sim_1/new/fullDatapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fullDatapath_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Downloads/University/Courses/9 - Fall 2023/CSCE 3302 Computer Architecture Lab/Vivado Projects/CSCE3301 Project 1 MS1 v3/CSCE3301 Project 1 MS1 v3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

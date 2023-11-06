@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "defines.v"
 
 module fullDatapath(
 input clk, ssdClk, rst,
@@ -14,11 +15,13 @@ input [3:0]ssdSel
     localparam N = 32;
       
     // wire [5:0] addr; // connected to PC
-    wire [31:0] instruction;
+    wire [31:0] IR;
     
-    wire branch, MemRead, MemtoReg;
+    wire branch_inst, MemRead, MemtoReg;
     wire [1:0]ALUop;
     wire MemWrite, ALUsrc, RegWrite;
+    wire jump;
+    wire jalr;
 
     wire [N-1:0]writeData; // todo: check writeData in RegisterFile
     wire [N-1:0]readData1, readData2;
@@ -36,7 +39,7 @@ input [3:0]ssdSel
     
     wire [31:0] MUX_RegisterWriteData;
     
-    wire [N-1:0]shiftOut;
+//    wire [N-1:0]shiftOut;
     
     wire [31:0]sumOut;
     wire [31:0]PCout;
@@ -47,23 +50,28 @@ input [3:0]ssdSel
     
     reg [12:0]SSD;
     
-    InstMem InstMem1(.addr(PCout[7:2]), .data_out(instruction));
-    
-    CU CU1(.inst(instruction[6:2]), 
-    .branch(branch), .MemRead(MemRead), .MemtoReg(MemtoReg), 
+    InstMem InstMem1(.addr(PCout[7:2]), .data_out(IR));
+        
+    CU CU1(.inst(IR[`IR_opcode]),
+    .branch(branch_inst), .MemRead(MemRead), .MemtoReg(MemtoReg), 
     .ALUop(ALUop), 
-    .MemWrite(MemWrite), .ALUsrc(ALUsrc), .RegWrite(RegWrite));
+    .MemWrite(MemWrite), .ALUsrc(ALUsrc), .RegWrite(RegWrite),
+    .jump(jump), .jalr(jalr)
+    );
+    
+    assign writeData = jump ? addOut : MUX_RegisterWriteData; // TODO: check if addOut, declared below, should be brought before this line
 
-    registerFile #(32)registerFile1(.readRegister1(instruction[19:15]), .readRegister2(instruction[24:20]), .writeRegister(instruction[11:7]), // 4 = log2(N)
-    .writeData(MUX_RegisterWriteData),
+    registerFile #(32)registerFile1(.readRegister1(IR[19:15]), .readRegister2(IR[24:20]), .writeRegister(IR[11:7]), // 4 = log2(N)
+    .writeData(writeData),
     .regWrite(RegWrite),
     .clk(clk), .rst(rst),
-    .readData1(readData1), .readData2(readData2));
+    .readData1(readData1), .readData2(readData2)
+    );
     
-    rv32_ImmGen immGen1(.IR(instruction), .Imm(immGenOut));
+    rv32_ImmGen immGen1(.IR(IR), .Imm(immGenOut), .PCout(PCout));
     
-//    ALUcu ALUcu1(.ALUop(ALUop), .inst(instruction[14:12]), .inst2(instruction[30]), .ALUsel(ALUsel));
-    ALUcu ALUcu1(.ALUop(ALUop), .funct3(instruction[14:12]), .funct7(instruction[31:25]), .ALUsel(ALUsel));
+//    ALUcu ALUcu1(.ALUop(ALUop), .inst(IR[14:12]), .inst2(IR[30]), .ALUsel(ALUsel));
+    ALUcu ALUcu1(.ALUop(ALUop), .funct3(IR[14:12]), .funct7(IR[31:25]), .ALUsel(ALUsel));
     
     NbitMUX #(32)nMUX_ALU(.in0(readData2),
 //    .in1({immGenOut[31],immGenOut[31:1]}),
@@ -78,9 +86,12 @@ input [3:0]ssdSel
 //    );
     wire cf, zf, vf, sf;
     
+//    wire [4:0]shamt = ((`OPCODE) == (`OPCODE_Arith_R)) ? readData1[4:0] : (`IR_shamt);
+    wire [4:0]shamt = ((IR[6:2]) == (5'b01_100)) ? readData2[4:0] : (IR[24:20]);
+    
     prv32_ALU ALU1(
     .a(readData1), .b(MUX_ALU),
-	.shamt(instruction[19:15]), // rs1 bits
+	.shamt(shamt),
 	.r(ALUOutput),
 	.cf(cf), .zf(zf), .vf(vf), .sf(sf),
 	.alufn(ALUsel)
@@ -100,22 +111,38 @@ input [3:0]ssdSel
     assign sumOut = immGenOut + PCout;
     assign addOut = PCout + 4;
     
+    branch_cu branch_cu1(
+    .funct3(IR[`IR_funct3]),
+    .branch(branch_inst),
+    .zf(zf),
+    .cf(cf),
+    .sf(sf),
+    .vf(vf),
+    .out(branch) 
+    );
+    
     NbitMUX #(32)nMUX_PC(.in0(addOut),
     .in1(sumOut),
-    .sel(branch & zf),
+    .sel(branch || jump),
     .out(MUX_PC));
     
+    wire PC_in;
     
-    PC PC1(.in(MUX_PC), .clk(clk), .rst(rst), .out(PCout));
+//    assign PC_in = jalr ? ALUOutput : MUX_PC;
+//    assign PC_in = MUX_PC;
+    
+//    PC PC1(.in(PC_in), .clk(clk), .rst(rst), .out(PCout));
+    PC PC1(.in(jalr ? ALUOutput : MUX_PC), .clk(clk), .rst(rst), .out(PCout));
     
     Four_Digit_Seven_Segment_Driver_Optimized ssd1(.clk(ssdClk), .num(SSD), .Anode(Anode), .LED_out(LED_out));
     
+
     
     always @(*)begin
     case (ledSel)
-        2'b00: LEDs = instruction[15:0];
-        2'b01: LEDs = instruction[31:16];
-        2'b10: LEDs = {2'b00, ALUop, ALUsel, zf, (branch & zf)};
+        2'b00: LEDs = IR[15:0];
+        2'b01: LEDs = IR[31:16];
+        2'b10: LEDs = {2'b00, ALUop, ALUsel, zf, branch};
     endcase
     end
     
@@ -130,7 +157,7 @@ input [3:0]ssdSel
             4'b0101: SSD = readData2[12:0];
             4'b0110: SSD = MUX_RegisterWriteData[12:0];
             4'b0111: SSD = immGenOut[12:0]; // edit to be before shifting
-            4'b1000: SSD = shiftOut[12:0];
+            4'b1000: SSD = immGenOut[12:0];
             4'b1001: SSD = MUX_ALU[12:0];
             4'b1010: SSD = ALUOutput[12:0];
             4'b1011: SSD = data_out[12:0];
